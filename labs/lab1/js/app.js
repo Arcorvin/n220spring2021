@@ -8,7 +8,16 @@ var offset =60;
 
 var scalar = 2;
 
-var speed = 0.05;
+var speed = 0.10;
+
+var angle1 = 0.0;
+
+var offset1 =60;
+
+var scalar1 = 2;
+
+var speed1 = 0.10;
+
 
 function setup(){
     createCanvas(1920, 1080);
@@ -68,6 +77,16 @@ function draw(){
     angle += speed;
 
     scalar +=speed;
+
+    var a = offset1 + cos(angle1) * scalar1;
+
+    var s = offset1 + sin(angle1) * scalar1;
+
+    ellipse(500+a, s, 2, 2);
+
+    angle1 -= speed1;
+
+    scalar1 -=speed1;
 
 
 
