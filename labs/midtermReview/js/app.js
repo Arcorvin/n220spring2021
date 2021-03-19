@@ -30,7 +30,7 @@ function draw(){
 
 
     myBall.x2 += myBall.sped*myBall.dir;
-    if((myBall.x2>myBall.width-myBall.radius) || (myBall.x < myBall.radius)){
+    if((myBall.x2>myBall.width-myBall.radius) || (myBall.x2 < myBall.radius)){
         myBall.dir = - myBall.dir;
     }
     if(myBall.dir == 1){
