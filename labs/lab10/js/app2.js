@@ -13,7 +13,6 @@ function colCha(event){
 
     let newEl = document.createElement("div");
      newEl.innerHTML = answer;
-     newEl.target.innerHTML = answer;
      dvBox.appendChild(newEl);
 
 }
