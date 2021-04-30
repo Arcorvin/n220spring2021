@@ -2,9 +2,8 @@
 let dvBox = document.getElementById("evTest")
 dvBox.addEventListener("click", colCha);
 let dvBox2 = document.getElementById("evTest2")
-dvBox2.addEventListener("click", colCha);
 let dvBox3 = document.getElementById("evTest3")
-dvBox3.addEventListener("click", colCha);
+
 
 dvBox.style.backgroundColor = "#999";
 dvBox.style.width = "200px";
@@ -27,7 +26,12 @@ dvBox3.style.margin = "5px";
 
 function colCha(event){
 
-    event.target.style.backgroundColor = "#000e0";
+
+
+    event.target.style.backgroundColor = "#999";
+    let response = event.target.getAttribute("data-response");
+    event.target.style.backgroundColor = response;
+    
     
 
 }
