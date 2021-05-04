@@ -24,6 +24,7 @@ dvBox3.style.float = "left";
 dvBox3.style.margin = "5px";
 
 
+
 function colCha(event){
 
 

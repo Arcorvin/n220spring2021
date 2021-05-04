@@ -79,7 +79,7 @@ dvBox9.style.float = "left";
 dvBox9.style.marginTop = "450px";
 dvBox9.style.marginLeft = "-210px";
 
-/*This is for the black bars to split the TIC-TAC-TOE board*/
+/*This is for the black bars to split the TIC-TAC-TOE board needs to be a half screen with the tools up for them to fit the grooves.*/
 dvBox10.style.backgroundColor = "#000";
 dvBox10.style.width = "20px";
 dvBox10.style.height = "640px";
@@ -109,9 +109,10 @@ dvBox13.style.margin = "10px"
 dvBox13.style.marginTop = "-650px";
 
 
-
+/* this is where the magic is supposed to happen. and cause the colors to change and display a win sign*/
 function colCha(event){
 let sym = ["#000", "#ffffff"]
+/*used to change color with the array*/
 for(i = 0; i <= sym.length; i++){
 
     event.target.style.backgroundColor = "#999";
@@ -119,7 +120,7 @@ for(i = 0; i <= sym.length; i++){
     event.target.backgroundColor = response;
     
 }
-
+/* where the if statememnt will go to display the win condition*/
 
 
     /*let newEl = document.createElement("div");
